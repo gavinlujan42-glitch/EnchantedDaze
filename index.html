@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EnchantedDaze is Gavin Lujan's studio for technology strategy, resilient systems, cybersecurity, modernization, and future ventures.">
+  <meta name="theme-color" content="#070911">
+  <meta property="og:title" content="EnchantedDaze | Gavin Lujan">
+  <meta property="og:description" content="Technology with imagination. Strategy with consequence.">
+  <meta property="og:type" content="website">
+  <title>EnchantedDaze | Gavin Lujan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#070911; --panel:rgba(15,19,32,.72); --line:rgba(255,255,255,.1);
+      --text:#f5f7fb; --muted:#aab3c5; --cyan:#61e7ff; --violet:#9a7cff; --gold:#f7c66a;
+      --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(circle at 15% 25%,rgba(97,231,255,.14),transparent 27%),radial-gradient(circle at 82% 18%,rgba(154,124,255,.16),transparent 25%),radial-gradient(circle at 50% 90%,rgba(247,198,106,.09),transparent 31%);animation:drift 16s ease-in-out infinite alternate}
+    body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+    @keyframes drift{to{transform:translate3d(2%,-2%,0) scale(1.04)}}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,9,17,.64);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:.05em}.brand span{color:var(--cyan)}
+    .nav-links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.nav-links a:hover{color:white}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;transition:.25s}.btn:hover{transform:translateY(-2px);border-color:rgba(97,231,255,.55)}.btn-primary{background:linear-gradient(135deg,var(--cyan),var(--violet));color:#070911;border:0;box-shadow:0 12px 40px rgba(97,231,255,.18)}
+    header{min-height:100vh;display:grid;place-items:center;padding:118px 0 70px}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--cyan);font-size:.76rem;font-weight:800}.hero h1{font-family:"Space Grotesk";font-size:clamp(4rem,10vw,8.3rem);line-height:.86;letter-spacing:-.07em;margin:18px 0 28px}.hero h1 span{display:block;background:linear-gradient(90deg,#fff 5%,var(--cyan) 50%,var(--violet));-webkit-background-clip:text;color:transparent}.lead{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--muted);max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+    .orb{aspect-ratio:1;border-radius:50%;position:relative;border:1px solid rgba(255,255,255,.18);background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.18),transparent 16%),conic-gradient(from 210deg,rgba(97,231,255,.5),rgba(154,124,255,.16),rgba(247,198,106,.42),rgba(97,231,255,.5));box-shadow:0 0 90px rgba(97,231,255,.16);animation:spin 18s linear infinite}.orb:before,.orb:after{content:"";position:absolute;border-radius:50%;inset:11%;border:1px solid rgba(255,255,255,.2)}.orb:after{inset:25%;background:var(--bg);box-shadow:inset 0 0 30px rgba(154,124,255,.25)}@keyframes spin{to{transform:rotate(360deg)}}
+    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}.section-head h2{font-family:"Space Grotesk";font-size:clamp(2.2rem,5vw,4rem);line-height:1;margin:0}.section-head p{max-width:520px;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:var(--panel);backdrop-filter:blur(16px);transition:.3s}.card:hover{transform:translateY(-5px);border-color:rgba(97,231,255,.38);box-shadow:0 22px 70px rgba(0,0,0,.24)}.card .num{font-family:"Space Grotesk";color:var(--cyan);font-size:.8rem;letter-spacing:.18em}.card h3{font-family:"Space Grotesk";font-size:1.35rem;margin:16px 0 8px}.card p{color:var(--muted);margin:0}.tag{display:inline-block;margin-top:22px;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:#dbe1ef;font-size:.76rem}
+    .quote{padding:70px;border-radius:30px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(97,231,255,.08),rgba(154,124,255,.08));text-align:center}.quote p{font-family:"Space Grotesk";font-size:clamp(2rem,5vw,4.8rem);line-height:1.02;letter-spacing:-.045em;margin:0}.quote strong{color:var(--cyan)}
+    .journal{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.feature{min-height:420px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(to top,rgba(7,9,17,.96),rgba(7,9,17,.12)),radial-gradient(circle at top right,rgba(154,124,255,.45),transparent 38%),#111727}.feature h3{font-size:clamp(2rem,4vw,3.2rem);line-height:1}.stack{display:grid;gap:18px}.stack .card{min-height:201px}
+    .vault{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.login{padding:28px;border-radius:24px;border:1px solid var(--line);background:rgba(10,13,22,.82)}label{display:block;font-size:.82rem;color:var(--muted);margin:14px 0 7px}input{width:100%;padding:14px 15px;border:1px solid var(--line);border-radius:12px;background:#090c14;color:white;outline:none}input:focus{border-color:var(--cyan)}.login button{width:100%;margin-top:18px;cursor:pointer}.fine{font-size:.78rem;color:#768097;text-align:center;margin-top:14px}
+    footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    @media(max-width:850px){.hero,.vault,.journal{grid-template-columns:1fr}.orb{width:min(440px,85%);margin:auto}.grid{grid-template-columns:1fr}.nav-links{display:none}.section-head{display:block}.section-head p{margin-top:16px}.quote{padding:42px 24px}.hero h1{font-size:clamp(3.4rem,18vw,6rem)}.footer-inner{display:block}.footer-inner p{margin:5px 0}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">ENCHANTED<span>DAZE</span></a>
+      <div class="nav-links"><a href="#work">Projects</a><a href="#journal">Journal</a><a href="#vault">Repository</a><a href="#about">About</a></div>
+      <a class="btn" href="https://www.linkedin.com/in/gavin-lujan505/" target="_blank" rel="noreferrer">Connect ↗</a>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Gavin Lujan · Technology Strategy Studio</div>
+        <h1>Enchanted<span>Daze</span></h1>
+        <p class="lead">A living laboratory for resilient systems, executive technology strategy, cybersecurity, modernization, human-centered design, and the ventures waiting just beyond the visible horizon.</p>
+        <div class="actions"><a class="btn btn-primary" href="#work">Enter the work</a><a class="btn" href="#journal">Read the field notes</a></div>
+      </div>
+      <div class="orb" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head"><h2>Future-facing work.</h2><p>Executive ideas disguised as project names. Each begins as a signal, becomes a system, and earns its way into the world.</p></div>
+        <div class="grid">
+          <article class="card"><div class="num">PROJECT 01</div><h3>Sentinel</h3><p>Risk, trust, and continuous security woven into the architecture rather than stapled on after the fact.</p><span class="tag">NIST CSF · RMF · Zero Trust</span></article>
+          <article class="card"><div class="num">PROJECT 02</div><h3>Atlas</h3><p>Enterprise modernization maps that turn complex portfolios into decisive, governable action.</p><span class="tag">Cloud · Integration · Governance</span></article>
+          <article class="card"><div class="num">PROJECT 03</div><h3>Avanyu</h3><p>Adaptive systems shaped around water, movement, stewardship, and the long memory of place.</p><span class="tag">Data · GIS · Public Mission</span></article>
+          <article class="card"><div class="num">PROJECT 04</div><h3>Aurora</h3><p>Human-centered design and AI collaboration that amplify judgment instead of replacing it.</p><span class="tag">AI · Workshops · Experience</span></article>
+          <article class="card"><div class="num">PROJECT 05</div><h3>Horizon</h3><p>Strategic sensing for leaders navigating technology shifts before they become emergencies.</p><span class="tag">Futures · Portfolio · Decision</span></article>
+          <article class="card"><div class="num">PROJECT 06</div><h3>Thunderhawk</h3><p>Operational resilience engineered for speed, clarity, and graceful recovery under pressure.</p><span class="tag">Continuity · Cloud · Response</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section><div class="wrap quote"><p>Everything comes down to two things: <strong>risk</strong> and <strong>trust</strong>. It’s all simple math from there.</p></div></section>
+
+    <section id="journal">
+      <div class="wrap">
+        <div class="section-head"><h2>Field notes.</h2><p>Working ideas on leadership, architecture, security, transformation, and the strange weather of technological change.</p></div>
+        <div class="journal">
+          <article class="card feature"><div class="num">FEATURED NOTE</div><h3>Why CIOs must think like architects</h3><p>Technology leadership is not a shopping list. It is the disciplined design of relationships between mission, people, risk, information, and time.</p></article>
+          <div class="stack">
+            <article class="card"><div class="num">NOTE 02</div><h3>Cloud without chaos</h3><p>Modernization succeeds when governance travels at the same speed as delivery.</p></article>
+            <article class="card"><div class="num">NOTE 03</div><h3>The mathematics of cybersecurity</h3><p>Controls matter. Context decides which controls matter now.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vault">
+      <div class="wrap vault">
+        <div><div class="eyebrow">Restricted workspace</div><h2 style="font-family:'Space Grotesk';font-size:clamp(2.5rem,6vw,5rem);line-height:.95;margin:16px 0 22px">The Repository Vault</h2><p class="lead">A future home for protected project briefs, working papers, prototypes, and collaboration spaces. The interface is ready; secure authentication will require a backend identity service before real documents are placed behind it.</p></div>
+        <form class="login" onsubmit="event.preventDefault(); document.getElementById('status').textContent='Vault access is not yet enabled.';">
+          <h3 style="margin-top:0;font-family:'Space Grotesk'">Authorized access</h3>
+          <label for="email">Email</label><input id="email" type="email" placeholder="name@example.com" required>
+          <label for="password">Password</label><input id="password" type="password" placeholder="••••••••" required>
+          <button class="btn btn-primary" type="submit">Enter repository</button>
+          <div id="status" class="fine">Demonstration interface only. No credentials are transmitted or stored.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><h2>Built for consequence.</h2><p>EnchantedDaze is the independent idea studio of Gavin Lujan, an innovative technology executive focused on resilient infrastructure, cloud integration, cybersecurity, data stewardship, and human-centered transformation.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><strong class="brand">ENCHANTED<span>DAZE</span></strong><p>Technology · Leadership · Security · Imagination</p><p>© <span id="year"></span> Gavin Lujan</p></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
