@@ -40,3 +40,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Republish trigger after enabling GitHub Pages in repository settings.
